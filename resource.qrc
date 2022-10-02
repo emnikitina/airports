@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/data">
+        <file>airport.csv</file>
+        <file>airports_short.csv</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
