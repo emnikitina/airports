@@ -21,13 +21,15 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
     std::unordered_map<std::string, std::pair<double, double> > airports;
+
+    std::vector<std::pair<std::string, std::pair<double, double> > > findNearest(std::pair<std::string, std::pair<double, double> > selectedAirport, double redius);
 };
 
-/*bool airportCompare (std::vector<std::string, double>::iterator A, std::vector<std::string, double>::iterator B) {
-    return (A->second < B->second);
-}*/
+
 
 #endif // MAINWINDOW_H
